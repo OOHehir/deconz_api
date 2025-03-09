@@ -14,11 +14,8 @@ URL = 'http://192.168.178.24:'+ port
 ESP32_MAC = 'BB:BB:BB:BB:AA:AA:AA:AA' # Note: Some endpoints require colons, some don't!
 
 # {0x96, 0x6b, 0x9f, 0x3e, 0xf9, 0x8a, 0xe6, 0x05, 0x97, 0x08}; // IC + CRC
-# Intall code of form: 6, 8, 12 or 16 Byte device installation code, plus 2 Byte CRC.
+# Install code of form: 6, 8, 12 or 16 Byte device installation code, plus 2 Byte CRC.
 ESP_INSTALL_CODE = '966B9F3EF98AE6059708'
-# ESP_INSTALL_CODE = '966B9F3EF98AE605'
-#ESP_INSTALL_CODE = '83FED3407A939723A5C639B26916D505C3B5'
-
 DECONZ_MAC = "00:21:2e:ff:ff:09:d2:20"
 
 def find_deconz() -> str | None:
